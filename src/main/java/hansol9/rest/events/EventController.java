@@ -1,5 +1,6 @@
 package hansol9.rest.events;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.ResponseEntity;
@@ -21,9 +22,14 @@ public class EventController {
     @Autowired
     EventRepository eventRepository;
 
+    @Autowired
+    ModelMapper modelMapper;
+
 //    @PostMapping("/api/events")
     @PostMapping
-    public ResponseEntity createEvent(@RequestBody Event event) {
+    public ResponseEntity createEvent(@RequestBody EventDTO eventDTO) {
+//    public ResponseEntity createEvent(@RequestBody Event event) {
+        Event event = modelMapper.map(eventDTO, Event.class);
         Event savedEvent = this.eventRepository.save(event);
 //        URI createUri = linkTo(methodOn(EventController.class).createEvent()).slash("{id}").toUri();
 //        URI createUri = linkTo(EventController.class).slash("{id}").toUri();

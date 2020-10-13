@@ -1,18 +1,16 @@
 package hansol9.rest.events;
 
 import lombok.*;
-
-
-import javax.persistence.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
-@Builder @AllArgsConstructor @NoArgsConstructor
-@Getter @Setter @EqualsAndHashCode(of = "id")
-@Entity
-public class Event {
+@Data
+@Builder
+@NoArgsConstructor @AllArgsConstructor
+public class EventDTO {
 
-    @Id @GeneratedValue
-    private Integer id;
     private String name;
     private String description;
     private LocalDateTime beginEnrollmentDateTime;
@@ -23,9 +21,5 @@ public class Event {
     private int basePrice;
     private int maxPrice;
     private int limitOfEnrollment;
-    private boolean free;
-    private boolean offline;
 
-    @Enumerated(EnumType.STRING)
-    private EventStatus eventStatus = EventStatus.DRAFT;
 }
