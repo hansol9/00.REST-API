@@ -27,10 +27,18 @@ public class EventController {
     @Autowired
     ModelMapper modelMapper;
 
+    @Autowired
+    EventValidator eventValidator;
+
 //    @PostMapping("/api/events")
     @PostMapping
     public ResponseEntity createEvent(@RequestBody @Valid EventDTO eventDTO, Errors errors) {
 //    public ResponseEntity createEvent(@RequestBody Event event) {
+        if (errors.hasErrors()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        eventValidator.validate(eventDTO, errors);
         if (errors.hasErrors()) {
             return ResponseEntity.badRequest().build();
         }
