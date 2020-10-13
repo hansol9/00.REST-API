@@ -5,12 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
+import javax.validation.Valid;
 import java.net.URI;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -27,8 +29,12 @@ public class EventController {
 
 //    @PostMapping("/api/events")
     @PostMapping
-    public ResponseEntity createEvent(@RequestBody EventDTO eventDTO) {
+    public ResponseEntity createEvent(@RequestBody @Valid EventDTO eventDTO, Errors errors) {
 //    public ResponseEntity createEvent(@RequestBody Event event) {
+        if (errors.hasErrors()) {
+            return ResponseEntity.badRequest().build();
+        }
+
         Event event = modelMapper.map(eventDTO, Event.class);
         Event savedEvent = this.eventRepository.save(event);
 //        URI createUri = linkTo(methodOn(EventController.class).createEvent()).slash("{id}").toUri();
