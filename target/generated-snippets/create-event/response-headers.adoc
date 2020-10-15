@@ -1,0 +1,10 @@
+|===
+|Name|Description
+
+|`+Location+`
+|location header
+
+|`+Content-Type+`
+|content type header
+
+|===
