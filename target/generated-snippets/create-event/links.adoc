@@ -10,4 +10,7 @@
 |`+update-event+`
 |link to update an existing event
 
+|`+profile+`
+|link to profile
+
 |===

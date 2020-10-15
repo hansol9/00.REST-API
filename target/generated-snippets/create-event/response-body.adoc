@@ -24,6 +24,9 @@
     },
     "update-event" : {
       "href" : "http://localhost:8080/api/events/1"
+    },
+    "profile" : {
+      "href" : "/docs/index.html#resources-events-create"
     }
   }
 }

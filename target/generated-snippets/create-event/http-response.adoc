@@ -2,8 +2,8 @@
 ----
 HTTP/1.1 201 Created
 Location: http://localhost:8080/api/events/1
+Content-Length: 813
 Content-Type: application/hal+json;charset=UTF-8
-Content-Length: 730
 
 {
   "id" : 1,
@@ -29,6 +29,9 @@ Content-Length: 730
     },
     "update-event" : {
       "href" : "http://localhost:8080/api/events/1"
+    },
+    "profile" : {
+      "href" : "/docs/index.html#resources-events-create"
     }
   }
 }
