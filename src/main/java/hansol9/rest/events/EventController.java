@@ -1,5 +1,6 @@
 package hansol9.rest.events;
 
+import hansol9.rest.common.ErrorsResource;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
@@ -37,12 +38,14 @@ public class EventController {
     public ResponseEntity createEvent(@RequestBody @Valid EventDTO eventDTO, Errors errors) {
 //    public ResponseEntity createEvent(@RequestBody Event event) {
         if (errors.hasErrors()) {
-            return ResponseEntity.badRequest().body(errors);
+//            return ResponseEntity.badRequest().body(errors);
+            return badRequest(errors);
         }
 
         eventValidator.validate(eventDTO, errors);
         if (errors.hasErrors()) {
-            return ResponseEntity.badRequest().body(errors);
+//            return ResponseEntity.badRequest().body(errors);
+            return badRequest(errors);
         }
 
         Event event = modelMapper.map(eventDTO, Event.class);
@@ -62,6 +65,10 @@ public class EventController {
         eventResource.add(new Link("/docs/index.html#resources-events-create").withRel("profile"));
 
         return ResponseEntity.created(createUri).body(eventResource);
+    }
+
+    private ResponseEntity<ErrorsResource> badRequest(Errors errors) {
+        return ResponseEntity.badRequest().body(new ErrorsResource(errors));
     }
 
 }
