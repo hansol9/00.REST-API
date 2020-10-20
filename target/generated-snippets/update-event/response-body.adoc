@@ -1,9 +1,9 @@
 [source,options="nowrap"]
 ----
 {
-  "id" : 3,
-  "name" : "Spring",
-  "description" : "REST API Development with Spring",
+  "id" : 1,
+  "name" : "Updated Event",
+  "description" : "test event",
   "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
   "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
   "beginEventDateTime" : "2018-11-25T14:30:00",
@@ -17,16 +17,10 @@
   "eventStatus" : "DRAFT",
   "_links" : {
     "self" : {
-      "href" : "http://localhost:8080/api/events/3"
-    },
-    "query-events" : {
-      "href" : "http://localhost:8080/api/events"
-    },
-    "update-event" : {
-      "href" : "http://localhost:8080/api/events/3"
+      "href" : "http://localhost:8080/api/events/1"
     },
     "profile" : {
-      "href" : "/docs/index.html#resources-events-create"
+      "href" : "/docs/index.html#resources-events-update"
     }
   }
 }

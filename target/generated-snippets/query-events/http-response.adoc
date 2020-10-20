@@ -1,26 +1,86 @@
 [source,http,options="nowrap"]
 ----
 HTTP/1.1 200 OK
+Content-Length: 7074
 Content-Type: application/hal+json;charset=UTF-8
-Content-Length: 6014
 
 {
   "_embedded" : {
     "eventList" : [ {
-      "id" : 28,
+      "id" : 31,
+      "name" : "event 27",
+      "description" : "test event",
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
+      "free" : false,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/events/31"
+        }
+      }
+    }, {
+      "id" : 30,
       "name" : "event 26",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/events/30"
+        }
+      }
+    }, {
+      "id" : 29,
+      "name" : "event 25",
+      "description" : "test event",
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
+      "free" : false,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/events/29"
+        }
+      }
+    }, {
+      "id" : 28,
+      "name" : "event 24",
+      "description" : "test event",
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
+      "free" : false,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/28"
@@ -28,19 +88,19 @@ Content-Length: 6014
       }
     }, {
       "id" : 27,
-      "name" : "event 25",
+      "name" : "event 23",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/27"
@@ -48,19 +108,19 @@ Content-Length: 6014
       }
     }, {
       "id" : 26,
-      "name" : "event 24",
+      "name" : "event 22",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/26"
@@ -68,19 +128,19 @@ Content-Length: 6014
       }
     }, {
       "id" : 25,
-      "name" : "event 23",
+      "name" : "event 21",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/25"
@@ -88,122 +148,62 @@ Content-Length: 6014
       }
     }, {
       "id" : 24,
-      "name" : "event 22",
+      "name" : "event 20",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/24"
         }
       }
     }, {
-      "id" : 23,
-      "name" : "event 21",
+      "id" : 6,
+      "name" : "event 2",
       "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
       "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/events/6"
+        }
+      }
+    }, {
+      "id" : 23,
+      "name" : "event 19",
+      "description" : "test event",
+      "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+      "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+      "beginEventDateTime" : "2018-11-25T14:30:00",
+      "endEventDateTime" : "2018-11-26T14:30:00",
+      "location" : "강남역 D2 스타텁 팩토리",
+      "basePrice" : 100,
+      "maxPrice" : 200,
+      "limitOfEnrollment" : 100,
+      "free" : false,
+      "offline" : true,
+      "eventStatus" : "DRAFT",
       "_links" : {
         "self" : {
           "href" : "http://localhost:8080/api/events/23"
-        }
-      }
-    }, {
-      "id" : 22,
-      "name" : "event 20",
-      "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
-      "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/api/events/22"
-        }
-      }
-    }, {
-      "id" : 4,
-      "name" : "event 2",
-      "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
-      "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/api/events/4"
-        }
-      }
-    }, {
-      "id" : 21,
-      "name" : "event 19",
-      "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
-      "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/api/events/21"
-        }
-      }
-    }, {
-      "id" : 20,
-      "name" : "event 18",
-      "description" : "test event",
-      "beginEnrollmentDateTime" : null,
-      "closeEnrollmentDateTime" : null,
-      "beginEventDateTime" : null,
-      "endEventDateTime" : null,
-      "location" : null,
-      "basePrice" : 0,
-      "maxPrice" : 0,
-      "limitOfEnrollment" : 0,
-      "free" : false,
-      "offline" : false,
-      "eventStatus" : null,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/api/events/20"
         }
       }
     } ]
@@ -230,7 +230,7 @@ Content-Length: 6014
   },
   "page" : {
     "size" : 10,
-    "totalElements" : 31,
+    "totalElements" : 33,
     "totalPages" : 4,
     "number" : 1
   }

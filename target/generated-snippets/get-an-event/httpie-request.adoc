@@ -1,4 +1,4 @@
 [source,bash]
 ----
-$ http GET 'http://localhost:8080/api/events/1'
+$ http GET 'http://localhost:8080/api/events/35'
 ----

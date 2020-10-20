@@ -1,12 +1,12 @@
 [source,http,options="nowrap"]
 ----
 HTTP/1.1 201 Created
-Location: http://localhost:8080/api/events/1
+Location: http://localhost:8080/api/events/3
 Content-Length: 813
 Content-Type: application/hal+json;charset=UTF-8
 
 {
-  "id" : 1,
+  "id" : 3,
   "name" : "Spring",
   "description" : "REST API Development with Spring",
   "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
@@ -22,13 +22,13 @@ Content-Type: application/hal+json;charset=UTF-8
   "eventStatus" : "DRAFT",
   "_links" : {
     "self" : {
-      "href" : "http://localhost:8080/api/events/1"
+      "href" : "http://localhost:8080/api/events/3"
     },
     "query-events" : {
       "href" : "http://localhost:8080/api/events"
     },
     "update-event" : {
-      "href" : "http://localhost:8080/api/events/1"
+      "href" : "http://localhost:8080/api/events/3"
     },
     "profile" : {
       "href" : "/docs/index.html#resources-events-create"

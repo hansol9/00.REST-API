@@ -2,26 +2,26 @@
 ----
 HTTP/1.1 200 OK
 Content-Type: application/hal+json;charset=UTF-8
-Content-Length: 523
+Content-Length: 631
 
 {
-  "id" : 1,
+  "id" : 35,
   "name" : "event 100",
   "description" : "test event",
-  "beginEnrollmentDateTime" : null,
-  "closeEnrollmentDateTime" : null,
-  "beginEventDateTime" : null,
-  "endEventDateTime" : null,
-  "location" : null,
-  "basePrice" : 0,
-  "maxPrice" : 0,
-  "limitOfEnrollment" : 0,
+  "beginEnrollmentDateTime" : "2018-11-23T14:20:00",
+  "closeEnrollmentDateTime" : "2018-11-24T14:30:00",
+  "beginEventDateTime" : "2018-11-25T14:30:00",
+  "endEventDateTime" : "2018-11-26T14:30:00",
+  "location" : "강남역 D2 스타텁 팩토리",
+  "basePrice" : 100,
+  "maxPrice" : 200,
+  "limitOfEnrollment" : 100,
   "free" : false,
-  "offline" : false,
-  "eventStatus" : null,
+  "offline" : true,
+  "eventStatus" : "DRAFT",
   "_links" : {
     "self" : {
-      "href" : "http://localhost:8080/api/events/1"
+      "href" : "http://localhost:8080/api/events/35"
     },
     "profile" : {
       "href" : "/docs/index.html#resources-events-get"
