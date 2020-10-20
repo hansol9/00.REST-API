@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/api/events?page=1&size=10&sort=name%2CDESC' -i -X GET
+----

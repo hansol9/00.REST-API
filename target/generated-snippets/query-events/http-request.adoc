@@ -1,0 +1,6 @@
+[source,http,options="nowrap"]
+----
+GET /api/events?page=1&size=10&sort=name%2CDESC HTTP/1.1
+Host: localhost:8080
+
+----
