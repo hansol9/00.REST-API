@@ -1,6 +1,6 @@
 [source,bash]
 ----
-$ curl 'http://localhost:8080/api/events/1' -i -X PUT \
+$ curl 'http://localhost:8080/api/events/2' -i -X PUT \
     -H 'Content-Type: application/json;charset=UTF-8' \
     -d '{
   "name" : "Updated Event",

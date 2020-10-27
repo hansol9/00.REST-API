@@ -11,6 +11,6 @@ $ echo '{
   "basePrice" : 100,
   "maxPrice" : 200,
   "limitOfEnrollment" : 100
-}' | http PUT 'http://localhost:8080/api/events/1' \
+}' | http PUT 'http://localhost:8080/api/events/2' \
     'Content-Type:application/json;charset=UTF-8'
 ----

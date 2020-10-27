@@ -1,5 +1,6 @@
 package hansol9.rest.events;
 
+import hansol9.rest.account.Account;
 import lombok.*;
 
 
@@ -28,6 +29,9 @@ public class Event {
 
     @Enumerated(EnumType.STRING)
     private EventStatus eventStatus = EventStatus.DRAFT;
+
+    @ManyToOne
+    private Account manager;
 
     public void update() {
         //Update free
