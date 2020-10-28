@@ -1,4 +1,48 @@
 -------------------------------------------------------------------------------
 Test set: hansol9.rest.events.EventControllerTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.129 s - in hansol9.rest.events.EventControllerTests
+Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 0.671 s <<< FAILURE! - in hansol9.rest.events.EventControllerTests
+createEvent_Bad_Request_Empty_Input(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.052 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<403>
+	at hansol9.rest.events.EventControllerTests.createEvent_Bad_Request_Empty_Input(EventControllerTests.java:160)
+
+updateEvent_Empty(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<403>
+	at hansol9.rest.events.EventControllerTests.updateEvent_Empty(EventControllerTests.java:318)
+
+updateEvent(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<403>
+	at hansol9.rest.events.EventControllerTests.updateEvent(EventControllerTests.java:278)
+
+createEvent(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<403>
+	at hansol9.rest.events.EventControllerTests.createEvent(EventControllerTests.java:57)
+
+getEvent_404(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.082 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at hansol9.rest.events.EventControllerTests.getEvent_404(EventControllerTests.java:258)
+
+getEvents(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.205 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at hansol9.rest.events.EventControllerTests.getEvents(EventControllerTests.java:217)
+
+createEvent_Bad_Request_Wrong_Input(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<403>
+	at hansol9.rest.events.EventControllerTests.createEvent_Bad_Request_Wrong_Input(EventControllerTests.java:185)
+
+createEvent_Bad_Request(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.03 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<403>
+	at hansol9.rest.events.EventControllerTests.createEvent_Bad_Request(EventControllerTests.java:146)
+
+updateEvent_404(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<403>
+	at hansol9.rest.events.EventControllerTests.updateEvent_404(EventControllerTests.java:335)
+
+getEvent(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.083 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at hansol9.rest.events.EventControllerTests.getEvent(EventControllerTests.java:238)
+
+updateEvent_400_Wrong(hansol9.rest.events.EventControllerTests)  Time elapsed: 0.043 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<403>
+	at hansol9.rest.events.EventControllerTests.updateEvent_400_Wrong(EventControllerTests.java:301)
+

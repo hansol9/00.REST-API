@@ -12,10 +12,4 @@ public class RestPracticeApplication {
 
 		SpringApplication.run(RestPracticeApplication.class, args);
 	}
-
-	@Bean
-	public ModelMapper modelMapper() {
-		return new ModelMapper();
-	}
-
 }
